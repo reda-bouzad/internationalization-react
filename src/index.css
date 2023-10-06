@@ -1,0 +1,100 @@
+
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital@1&family=Poppins:wght@100&family=Prompt:ital,wght@0,200;1,400&family=Roboto:wght@400;500&family=Rubik:wght@500&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:ital@1&family=Poppins:wght@100&family=Prompt:ital,wght@0,200;1,400&family=Roboto:wght@400;500&family=Rubik:wght@500&family=Shadows+Into+Light&display=swap');
+
+:root {
+    --arrow-bg: rgba(255, 255, 255, 0.3);
+    --arrow-icon: url(./assets/carrot.svg);
+    --option-bg: white;
+    --select-bg: rgba(255, 255, 255, 0.2);
+  }
+
+/* global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* promobar */
+.promo-bar {
+    width: 100vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a63638;
+    color: white;
+    column-gap: 30px;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+}
+
+.my-btn {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    display: inline-block;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.headings{
+    margin-top: 55px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.headings > h3 {
+    color: rgb(66, 61, 61);
+}
+
+nav > ul {
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul > li{
+    list-style-type: none;
+    font-family: 'Rubik', sans-serif;
+}
+
+select {
+
+    border: 0;
+    outline: 0;
+    font: inherit;
+    width: 10rem;
+    padding: 0.5rem ;
+    color: black;
+    border-radius: 0.25em;
+    cursor: pointer;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    option {
+      color: inherit;
+      background-color: red;
+    }
+  }
